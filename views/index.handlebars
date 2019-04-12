@@ -1,0 +1,22 @@
+<img src="http://www.clipartroo.com/images/75/cat-clipart-75969.png">
+<h1>Fancy Feaster</h1>
+
+<div class="burger-container"></div>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Add a Flavor</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <input type="text" id="ca" name="name">
+    </div>
+    <br>
+    <button type="submit">Add</button>
+</form>
